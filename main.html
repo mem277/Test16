@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        function so_nguyen_to(num) {
-           if (num < 2) {
-                return false;
-            }
-           let count = 0
-            for (let i = 2; i <= Math.sqrt(num); i++) {
-                if (num % i === 0) {
-                    count++;
-                }
-            }
-            return count === 0;
-        }
-        console.log(so_nguyen_to(8));
-    </script>
+    <div>
+        Đây là một div được hiển thị như một block
+    </div>
+    <p>Đây là một đoạn văn bản với <span>span</span> được hiển thị như một inline</p>
+<style>
+  .inline-block {
+    display: inline-block;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+</style>
+<style>
+    /* CSS cho màn hình máy tính */
+    body {
+        background-color: lightblue;
+    }
+    
+</style>
+<h2>display: inline-block ;</h2>
+<span class="inline-block">This is an</span> <span class="inline-block">inline-block element</span>
 </body>
 </html>
